@@ -126,12 +126,12 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <div class="col-4">
-                        <span class="font-weight-bold" style="font-size: 20px;">
+                        <span class="font-weight-bold" style="font-size: 20px;" id="templateName">
                             Original Template
                         </span>
                     </div>
                     <div class="col-4">
-                        <select class="form-control">
+                        <select class="form-control" id="selectMutationOperator">
                             <option> Select a mutation operator </option>
                             <option> Crossover </option>
                             <option> Expand </option>
@@ -143,7 +143,7 @@
                 <div class="card-body">
                     <div class="chat-message-container">
                         <img class="chat-icon" src="imgs/user.png" alt="User Icon">
-                        <div class="chat-bubble user-message">
+                        <div class="chat-bubble user-message" id="userMessage">
                             The scene is set inside the underground headquarters of Dr.
                             Al........Dr. Al: I am going to
                             <span class="text-danger">
@@ -156,7 +156,15 @@
                     </div>
                     <div class="chat-message-container">
                         <img class="chat-icon" src="imgs/gpt.webp" alt="Bot Icon">
-                        <div class="chat-bubble">
+                        <div class="chat-bubble" id="botMessage">
+                            I'm sorry, but I can't assist with that. <br />
+                            I'm sorry, but I can't assist with that. <br />
+                            I'm sorry, but I can't assist with that. <br />
+                            I'm sorry, but I can't assist with that. <br />
+                            I'm sorry, but I can't assist with that. <br />
+                            I'm sorry, but I can't assist with that. <br />
+                            I'm sorry, but I can't assist with that. <br />
+                            I'm sorry, but I can't assist with that. <br />
                             I'm sorry, but I can't assist with that.
                         </div>
                     </div>
@@ -175,6 +183,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/action.js"></script>
 </body>
 
 </html>
