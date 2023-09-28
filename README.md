@@ -1,1 +1,8 @@
-# gpt-fuzz.github.io
+# **GPTFuzzer**: Red Teaming Large Language Models with Auto-Generated Jailbreak Prompts
+
+## Abstract
+Large language models (LLMs) have recently experienced tremendous popularity and are widely used from casual conversations to AI-driven programming. However, despite their considerable success, LLMs are not entirely reliable and can give detailed guidance on how to conduct harmful or illegal activities. While safety measures can reduce the risk of such outputs, adversarial "jailbreak" attacks can still exploit LLMs to produce harmful content. These jailbreak templates are typically manually crafted, making large-scale testing challenging.
+
+In this paper, we introduce GPTFUZZER , a novel blackbox jailbreak fuzzing framework inspired by AFL fuzzing framework. Instead of manual engineering, GPTFUZZER automates the generation of jailbreak templates for red-teaming LLMs. At its core, GPTFUZZER starts with human-written templates as seeds, then mutates them using mutate operators to produce new templates. We detail three key components of GPTFUZZER : a seed selection strategy for balancing efficiency and variability, metamorphic relations for creating semantically equivalent or similar sentences, and a judgment model to assess the success of a jailbreak attack.
+
+We tested GPTFUZZER on various commercial and opensource LLMs, such as ChatGPT, LLaMa-2, and Claude2, under diverse attack scenarios. Our results indicate that GPTFUZZER consistently produces jailbreak templates with a high success rate, even in settings where all human-crafted templates fail. Notably, even starting with suboptimal seed templates, GPTFUZZER maintains over 90% attack success rate against ChatGPT and Llama-2 models. We believe GPTFUZZER will aid researchers and practitioners in assessing LLM robustness and will spur further research into LLM safety.
